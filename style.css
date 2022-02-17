@@ -1,0 +1,44 @@
+body{
+    font-family: 'Courier Prime', monospace;
+    margin:0;
+    background: #000;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#numbers{
+    background: url(https://codepen-large-media.s3-ap-southeast-1.amazonaws.com/tumblr_o632cm2m4S1rurt8eo1_500.webp) no-repeat left;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(255,255,255,0.2);
+    font-size:18vw;
+    word-break: break-all;
+    text-align: center;
+}
+
+#link{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding:15px;
+    text-align: center;
+    text-decoration: none;
+    color:#000;
+    background:#fff;
+    transition: ease-in-out 200ms background;
+}
+
+@media screen and (orientation: portrait){
+    #numbers{
+        font-size: 50vw;
+    }
+}
